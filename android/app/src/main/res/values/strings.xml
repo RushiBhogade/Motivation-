@@ -1,0 +1,4 @@
+<resources>
+ <string name="app_name">Motivate</string>
+    <string name="accessibility_service_description">Monitors browser URLs to block adult content and help you stay on track.</string>
+</resources>

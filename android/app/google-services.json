@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "584175335982",
+    "firebase_url": "https://streak-saver-58e31-default-rtdb.firebaseio.com",
+    "project_id": "streak-saver-58e31",
+    "storage_bucket": "streak-saver-58e31.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584175335982:android:7b8991df1d3512e9d57dbf",
+        "android_client_info": {
+          "package_name": "com.motivate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw2OLo0HZ0h8eSspFMVINRM6JronbKkt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584175335982:android:11cf045a9fa47a3bd57dbf",
+        "android_client_info": {
+          "package_name": "com.streaksaver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw2OLo0HZ0h8eSspFMVINRM6JronbKkt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
