@@ -42,6 +42,28 @@ class AccessibilityModule(private val reactContext: ReactApplicationContext) :
             android.util.Log.e("AccessibilityModule", "Error opening settings: ${e.message}")
         }
     }
+    // In AccessibilityModule.kt — add these 3 new methods:
+
+@ReactMethod
+fun syncUrlKeywords(keywordsJson: String) {
+    val prefs = reactContext.getSharedPreferences("nofap_prefs", Context.MODE_PRIVATE)
+    prefs.edit().putString("blocker_url_keywords", keywordsJson).apply()
+    android.util.Log.d("AccessibilityModule", "URL keywords synced: $keywordsJson")
+}
+
+@ReactMethod
+fun syncTextKeywords(keywordsJson: String) {
+    val prefs = reactContext.getSharedPreferences("nofap_prefs", Context.MODE_PRIVATE)
+    prefs.edit().putString("blocker_text_keywords", keywordsJson).apply()
+    android.util.Log.d("AccessibilityModule", "Text keywords synced: $keywordsJson")
+}
+
+@ReactMethod
+fun syncBlockedApps(appsJson: String) {
+    val prefs = reactContext.getSharedPreferences("nofap_prefs", Context.MODE_PRIVATE)
+    prefs.edit().putString("blocker_apps", appsJson).apply()
+    android.util.Log.d("AccessibilityModule", "Apps synced: $appsJson")
+}
 
     private fun isServiceEnabled(): Boolean {
         val packageName = reactContext.packageName
